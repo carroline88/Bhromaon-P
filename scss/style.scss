@@ -264,3 +264,45 @@ img {
     }
   }
 }
+
+.steps {
+  background-color: $color-primary;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5rem 10%;
+  }
+
+  .step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+
+    .step-icon {
+      font-size: 2.2rem;
+      color: $color-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+    }
+
+    .step-title {
+      font-family: $font-primary;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: $color-white;
+      text-transform: capitalize;
+    }
+  }
+}

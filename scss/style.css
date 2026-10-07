@@ -405,4 +405,44 @@ img {
     right: 0;
     z-index: 1;
   }
+}
+
+.steps {
+  background-color: #5474fd;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .steps {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5rem 10%;
+  }
+}
+.steps .step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+.steps .step-card .step-icon {
+  font-size: 2.2rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+.steps .step-card .step-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */
