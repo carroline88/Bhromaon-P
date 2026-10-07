@@ -407,34 +407,52 @@ img {
 
 .steps {
   background-color: #333333;
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 @media (min-width: 768px) {
   .steps {
     flex-direction: row;
-    justify-content: space-around;
-    padding: 5rem 10%;
+    justify-content: center;
+    gap: 6rem;
+    padding: 3.5rem 10%;
   }
 }
 .steps .step-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
   text-align: center;
 }
 .steps .step-card .step-icon {
-  font-size: 2.2rem;
-  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
+}
+.steps .step-card .step-icon i, .steps .step-card .step-icon svg {
+  font-size: 2.2rem;
+  color: #5474fd;
+}
+.steps .step-card:nth-child(2) .step-icon {
+  border: 2px solid #e05b5b;
+  border-radius: 50%;
+}
+.steps .step-card:nth-child(2) .step-icon i, .steps .step-card:nth-child(2) .step-icon svg {
+  font-size: 1.6rem;
+  color: #e05b5b;
+}
+.steps .step-card p,
+.steps .step-card span,
+.steps .step-card h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
 }
 .steps .step-card .step-title {
   font-family: "Josefin Sans", sans-serif;

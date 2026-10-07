@@ -285,34 +285,39 @@ img {
     gap: 1.2rem;
     text-align: center;
 
-    svg,
-    i {
-      font-size: 2.2rem;
-      color: $color-primary;
-    }
-
-    &:nth-child(2) svg,
-    &:nth-child(2) i {
-      color: #ff6a6a;
-    }
-
-    p,
-    span,
-    h3 {
-      font-family: $font-body;
-      font-size: 1.1rem;
-      color: $color-white;
-    }
-
     .step-icon {
-      font-size: 2.2rem;
-      color: $color-white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 70px;
-      height: 70px;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+
+        i, svg {
+          font-size: 2.2rem;
+          color: $color-primary; 
+        }
+      }
+
+      
+      &:nth-child(2) {
+        .step-icon {
+          border: 2px solid #e05b5b;
+          border-radius: 50%;
+
+          i, svg {
+            font-size: 1.6rem;
+            color: #e05b5b; 
+          }
+        }
+      }
+
+      p,
+      span,
+      h3 {
+        font-family: $font-primary;
+        font-size: 1.1rem;
+        color: $color-white;
+      }
 
     .step-title {
       font-family: $font-primary;
