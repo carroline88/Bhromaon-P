@@ -306,3 +306,73 @@ img {
     }
   }
 }
+
+.destination {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 4rem 1.5rem;
+
+  @media (min-width: $bp-tablet) {
+    padding: 6rem 10%;
+  }
+
+  .destination-card {
+    background-color: rgba(35, 35, 35, 0.9);
+    padding: 2.5rem;
+    max-width: 500px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    .destination-country {
+      display: block;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $color-text-muted;
+      margin-bottom: 0.5rem;
+    }
+
+    .destination-title {
+      font-family: $font-headings;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      color: $color-white;
+    }
+
+    .destination-text {
+      font-size: 0.95rem;
+      color: $color-text-muted;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: $color-primary;
+      color: $color-white;
+      padding: 0.85rem 2rem;
+      border-radius: 2px;
+      font-family: $font-primary;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+
+      &:hover,
+      &:focus {
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+}
+
+
+.destination-spain-1 {
+  background-image: url('../images/spain-1.png');
+  justify-content: flex-start;
+}
