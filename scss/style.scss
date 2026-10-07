@@ -335,69 +335,94 @@ img {
 }
 
 .destination {
-  min-height: 600px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  padding: 4rem 1.5rem;
+    position: relative;
+    min-height: 520px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 3rem 1.5rem;
 
-  @media (min-width: $bp-tablet) {
-    padding: 6rem 10%;
-  }
-
-  .destination-card {
-    background-color: rgba(35, 35, 35, 0.9);
-    padding: 2.5rem;
-    max-width: 500px;
-    border-radius: 4px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-
-    .destination-country {
-      display: block;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: $color-text-muted;
-      margin-bottom: 0.5rem;
+    @media (min-width: $bp-tablet) {
+      min-height: 600px;
+      padding: 0 10%;
     }
 
-    .destination-title {
-      font-family: $font-headings;
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin-bottom: 1.2rem;
-      color: $color-white;
-    }
+    &.destination-spain-1 {
+      justify-content: flex-start;
 
-    .destination-text {
-      font-size: 0.95rem;
-      color: $color-text-muted;
-      line-height: 1.7;
-      margin-bottom: 2rem;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      background-color: $color-primary;
-      color: $color-white;
-      padding: 0.85rem 2rem;
-      border-radius: 2px;
-      font-family: $font-primary;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: background-color 0.3s ease;
-
-      &:hover,
-      &:focus {
-        background-color: $color-primary-dark;
+      @media (min-width: $bp-tablet) {
+        padding-left: 14%;
       }
     }
-  }
-}
 
+    &.destination-spain-2 {
+      justify-content: flex-end;
+
+      @media (min-width: $bp-tablet) {
+        padding-right: 18%;
+      }
+    }
+
+    .destination-card {
+      background-color: rgba(35, 35, 35, 0.88);
+      backdrop-filter: blur(8px);
+      max-width: 480px;
+      padding: 2.2rem 2.5rem;
+      border-radius: 2px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+
+      .destination-country {
+        display: block;
+        font-family: $font-primary;
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+      }
+
+      .destination-title {
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        color: $color-white;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      .destination-text {
+        font-family: $font-primary;
+        font-size: 0.92rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 1.5rem;
+      }
+
+      a,
+      button,
+      .btn-primary {
+        display: inline-block;
+        background-color: $color-primary;
+        color: $color-white;
+        text-transform: uppercase;
+        font-family: $font-primary;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        padding: 0.85rem 2rem;
+        border: none;
+        border-radius: 2px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: opacity 0.2s ease, background-color 0.2s ease;
+
+        &:hover {
+          opacity: 0.85;
+        }
+      }
+    }
+}
 
 .destination-spain-1 {
   background-image: url('../images/spain-1.png');
