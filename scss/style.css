@@ -439,7 +439,8 @@ img {
   width: 60px;
   height: 60px;
 }
-.steps .step-card .step-icon i, .steps .step-card .step-icon svg {
+.steps .step-card .step-icon i,
+.steps .step-card .step-icon svg {
   font-size: 2.2rem;
   color: #5474fd;
 }
@@ -447,7 +448,8 @@ img {
   border: 2px solid #e05b5b;
   border-radius: 50%;
 }
-.steps .step-card:nth-child(2) .step-icon i, .steps .step-card:nth-child(2) .step-icon svg {
+.steps .step-card:nth-child(2) .step-icon i,
+.steps .step-card:nth-child(2) .step-icon svg {
   font-size: 1.6rem;
   color: #e05b5b;
 }

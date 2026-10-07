@@ -32,7 +32,7 @@ img {
 .hero {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-              url('../images/hero-bg.png') center/cover no-repeat;
+    url('../images/hero-bg.png') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,15 +272,15 @@ img {
   gap: 2.5rem;
 
   @media (min-width: $bp-tablet) {
-      flex-direction: row;
-      justify-content: center;
-      gap: 6rem;
-      padding: 3.5rem 10%;
-      background-image: url('../images/steps-line.png');
-      background-repeat: no-repeat;
-      background-position: center 2.8rem;
-      background-size: 780px auto;
-    }
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+    padding: 3.5rem 10%;
+    background-image: url('../images/steps-line.png');
+    background-repeat: no-repeat;
+    background-position: center 2.8rem;
+    background-size: 780px auto;
+  }
 
   .step-card {
     display: flex;
@@ -290,38 +290,40 @@ img {
     text-align: center;
 
     .step-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
 
-        i, svg {
-          font-size: 2.2rem;
-          color: $color-primary; 
+      i,
+      svg {
+        font-size: 2.2rem;
+        color: $color-primary;
+      }
+    }
+
+
+    &:nth-child(2) {
+      .step-icon {
+        border: 2px solid #e05b5b;
+        border-radius: 50%;
+
+        i,
+        svg {
+          font-size: 1.6rem;
+          color: #e05b5b;
         }
       }
+    }
 
-      
-      &:nth-child(2) {
-        .step-icon {
-          border: 2px solid #e05b5b;
-          border-radius: 50%;
-
-          i, svg {
-            font-size: 1.6rem;
-            color: #e05b5b; 
-          }
-        }
-      }
-
-      p,
-      span,
-      h3 {
-        font-family: $font-primary;
-        font-size: 1.1rem;
-        color: $color-white;
-      }
+    p,
+    span,
+    h3 {
+      font-family: $font-primary;
+      font-size: 1.1rem;
+      color: $color-white;
+    }
 
     .step-title {
       font-family: $font-primary;
@@ -335,96 +337,96 @@ img {
 }
 
 .destination {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 0;
-    min-height: 520px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 3rem 1.5rem;
-    
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  min-height: 520px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 3rem 1.5rem;
+
+
+  @media (min-width: $bp-tablet) {
+    min-height: 600px;
+    padding: 0 10%;
+  }
+
+  &.destination-spain-1 {
+    justify-content: flex-start;
 
     @media (min-width: $bp-tablet) {
-      min-height: 600px;
-      padding: 0 10%;
+      padding-left: 14%;
+    }
+  }
+
+  &.destination-spain-2 {
+    justify-content: flex-end;
+
+    @media (min-width: $bp-tablet) {
+      padding-right: 18%;
+    }
+  }
+
+  .destination-card {
+    background-color: rgba(35, 35, 35, 0.88);
+    backdrop-filter: blur(8px);
+    max-width: 480px;
+    padding: 2.2rem 2.5rem;
+    border-radius: 2px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+
+    .destination-country {
+      display: block;
+      font-family: $font-primary;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.7);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
     }
 
-    &.destination-spain-1 {
-      justify-content: flex-start;
-
-      @media (min-width: $bp-tablet) {
-        padding-left: 14%;
-      }
+    .destination-title {
+      font-family: $font-primary;
+      font-size: 1.6rem;
+      color: $color-white;
+      margin-bottom: 1rem;
+      font-weight: 600;
     }
 
-    &.destination-spain-2 {
-      justify-content: flex-end;
-
-      @media (min-width: $bp-tablet) {
-        padding-right: 18%;
-      }
+    .destination-text {
+      font-family: $font-primary;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 1.5rem;
     }
 
-    .destination-card {
-      background-color: rgba(35, 35, 35, 0.88);
-      backdrop-filter: blur(8px);
-      max-width: 480px;
-      padding: 2.2rem 2.5rem;
+    a,
+    button,
+    .btn-primary {
+      display: inline-block;
+      background-color: $color-primary;
+      color: $color-white;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      padding: 0.85rem 2rem;
+      border: none;
       border-radius: 2px;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s ease, background-color 0.2s ease;
 
-      .destination-country {
-        display: block;
-        font-family: $font-primary;
-        font-size: 0.85rem;
-        letter-spacing: 2px;
-        color: rgba(255, 255, 255, 0.7);
-        text-transform: uppercase;
-        margin-bottom: 0.4rem;
-      }
-
-      .destination-title {
-        font-family: $font-primary;
-        font-size: 1.6rem;
-        color: $color-white;
-        margin-bottom: 1rem;
-        font-weight: 600;
-      }
-
-      .destination-text {
-        font-family: $font-primary;
-        font-size: 0.92rem;
-        line-height: 1.6;
-        color: rgba(255, 255, 255, 0.8);
-        margin-bottom: 1.5rem;
-      }
-
-      a,
-      button,
-      .btn-primary {
-        display: inline-block;
-        background-color: $color-primary;
-        color: $color-white;
-        text-transform: uppercase;
-        font-family: $font-primary;
-        font-size: 0.85rem;
-        font-weight: 600;
-        letter-spacing: 1.5px;
-        padding: 0.85rem 2rem;
-        border: none;
-        border-radius: 2px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: opacity 0.2s ease, background-color 0.2s ease;
-
-        &:hover {
-          opacity: 0.85;
-        }
+      &:hover {
+        opacity: 0.85;
       }
     }
+  }
 }
 
 .destination-spain-1 {
@@ -449,7 +451,7 @@ img {
   justify-content: center;
   background-image: url('../images/tourist-bg.png');
   background-size: cover;
-  background-position: center 20%; 
+  background-position: center 20%;
   background-repeat: no-repeat;
   width: 100%;
 
