@@ -388,27 +388,35 @@ img {
   .why-us .why-us-images {
     position: relative;
     min-height: 380px;
+    width: 100%;
+    max-width: 500px;
+    height: 380px;
+    margin: 2rem auto 0;
   }
-  .why-us .why-us-images .why-img {
-    position: absolute;
-    width: 65%;
-    border-radius: 4px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  }
-  .why-us .why-us-images .why-img-top {
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-  .why-us .why-us-images .why-img-bottom {
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-  }
+}
+.why-us .why-us-images .why-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.why-us .why-us-images .why-img-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 
 .steps {
-  background-color: #5474fd;
+  background-color: #333333;
   padding: 4rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -517,7 +525,7 @@ img {
 
 .testimonial {
   padding: 5rem 1.5rem;
-  background: linear-gradient(rgba(30, 32, 34, 0.92), rgba(30, 32, 34, 0.92)), url("../images/hero-bg.png") center/cover no-repeat;
+  background: linear-gradient(rgba(30, 32, 34, 0.8), rgba(30, 32, 34, 0.8)), url("../images/hero-bg.png") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
