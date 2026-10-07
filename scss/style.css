@@ -419,6 +419,10 @@ img {
     justify-content: center;
     gap: 6rem;
     padding: 3.5rem 10%;
+    background-image: url("../images/steps-line.png");
+    background-repeat: no-repeat;
+    background-position: center 2.8rem;
+    background-size: 780px auto;
   }
 }
 .steps .step-card {
