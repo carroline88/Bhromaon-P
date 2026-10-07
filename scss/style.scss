@@ -384,7 +384,8 @@ img {
 
 .testimonial {
   padding: 5rem 1.5rem;
-  background-color: $color-dark-bg;
+  background: linear-gradient(rgba(30, 32, 34, 0.92), rgba(30, 32, 34, 0.92)),
+              url('../images/hero-bg.png') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
