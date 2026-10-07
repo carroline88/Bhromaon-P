@@ -378,40 +378,30 @@ img {
   background-color: #496bfe;
 }
 .why-us .why-us-images {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .why-us .why-us-images {
-    position: relative;
-    min-height: 380px;
-    width: 100%;
-    max-width: 500px;
-    height: 380px;
-    margin: 2rem auto 0;
-  }
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  height: 310px;
+  margin: 1.5rem auto 0;
 }
 .why-us .why-us-images .why-img-top {
   position: absolute;
   top: 0;
   left: 0;
-  width: 65%;
+  width: 62%;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 .why-us .why-us-images .why-img-bottom {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 65%;
+  top: 65px;
+  left: 35%;
+  width: 62%;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
   z-index: 2;
 }
 
